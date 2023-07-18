@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .headerBtn {
+        @apply border w-7 h-7 rounded-full p-1 justify-center
+    }
+    .container {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
