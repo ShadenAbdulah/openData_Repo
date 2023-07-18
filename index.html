@@ -7,7 +7,6 @@
         <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="images/QU_Favicon.png">
 
         <link rel="stylesheet" href="public/tailwind.css">
-        <script src="script.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,33 +78,33 @@
 
                 <div class="container mx-auto my-auto other:px-5">
                     <div class="border border-gray-100 mt-10 bg-white w-full small:w-5/6 mx-auto grid grid-cols-4 small:grid-cols-2">
-                        <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 text-brand-header-1 text-white bg-brand-header-1">
+                        <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 activeTap" id="about_openData_tap" onclick="shiftTaps('about_openData_tap', 'about_openData')">
                             <div class="col-span-1 mx-auto my-auto">
-                                <svg class="h-4 small:h-2 text-brand-header-1 fill-brand-header-3" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="h-4 small:h-2 text-brand-header-1 fill-none hover:fill-brand-header-1" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
                                 </svg>
                             </div>
                             <div class="col-span-4 mx-2 my-auto font-tajawal font-medium">عن البيانات المفتوحة</div>
                         </div>
-                        <div onclick="alertFun()" class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 active:text-white active:bg-brand-header-1">
+                        <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 nonActiveTap" id="openData_lib_tap" onclick="shiftTaps('openData_lib_tap', 'openData_lib')">
                             <div class="col-span-1 mx-auto my-auto">
-                                <svg class="h-4 text-brand-header-1 fill-none group-hover:fill-brand-header-1 group-active:fill-brand-header-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                                 </svg>
                             </div>
                             <div class="col-span-4 mx-2 my-auto font-tajawal font-medium">مكتبة البيانات المفتوحة</div>
                         </div>
-                        <div onclick="alertFun()" class="border-l border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 active:text-white active:bg-brand-header-1">
+                        <div onclick="alertFun()" class="border-l border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 nonActiveTap">
                             <div class="col-span-1 mx-auto my-auto">
-                                <svg class="h-4 text-brand-header-1 fill-none group-hover:stroke-1 group-hover:stroke-blue-50  group-hover:fill-brand-header-1 group-active:stroke-brand-header-1 group-active:fill-brand-header-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
                                 </svg>                                 
                             </div>
                             <div class="col-span-4 my-auto font-tajawal font-medium mx-2">سياسة البيانات المفتوحة</div>
                         </div>
-                        <div onclick="alertFun()" class="grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 active:text-white active:bg-brand-header-1">
+                        <div onclick="alertFun()" class="grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 nonActiveTap">
                             <div class="col-span-1 mx-auto my-auto">
-                                <svg class="h-4 text-brand-header-1 fill-none group-hover:fill-brand-header-1 group-active:fill-brand-header-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
                                 </svg>                              
                             </div>
@@ -113,10 +112,106 @@
                         </div>
                     </div>
                     
-                    <div class="border border-gray-100 h-fit mx-auto my-10 py-5 px-10 bg-white w-full small:w-5/6">
+                    <div class="block content border border-gray-100 h-fit mx-auto my-10 py-5 px-10 bg-white w-full small:w-5/6" id="about_openData">
                         <h1 class="font-tajawal font-bold text-lg w-full">عن البيانات المفتوحة</h1>
                         <p class="font-tajawal mt-8 text-justify">البيانات المفتوحة متاحة لجميع مستخدمي البوابة الإلكترونية لجامعة القصيم ، 
                             وهي تهدف إلى تعزيز المشاركة المجتمعية ورفع مستوى نشر المعرفة وعلى زائري البوابة والمستفيدين من خدماتها الاطلاع على سياسة استخدام تلك البيانات لمعرفة أي تحديثات يتم عليها.</p>
+                    </div>
+
+                    <div class="hidden content border border-gray-100 h-fit mx-auto my-10 py-5 px-20 bg-white w-full font-tajawal small:w-5/6" id="openData_lib">
+                        <div>
+                            <h1 class="font-bold">بيانات أعضاء هيئة التدريس</h1>
+                            <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60">
+                                <div class="flex">
+                                    <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate1">0</h1>
+                                    <div class="flex items-center my-auto pb-1.5">
+                                        <svg class="rate1 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(1, 'rate1')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate1 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(2, 'rate1')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate1 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(3, 'rate1')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate1 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(4, 'rate1')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate1 w-3 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(5, 'rate1')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flex mx-auto">
+                                    <svg class="w-3 pb-1.5 fill-none text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
+                                </div>
+                                <div class="flex align-bottom">
+                                    <svg class="w-3 fill-none pb-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+                                    </svg>
+                                    <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
+                                </div>
+                            </div>
+                            <p>بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس.</p>
+                            <div class="flex my-3">
+                                <a href="#" class="bg-yellow-400 text-white w-14 text-center align-middle pt-1 ml-2">XLSX</a>
+                                <a href="#" class="bg-brand-header-1 text-white w-14 text-center align-middle pt-1 ml-2">CSV</a>
+                                <p class="text-left w-full text-gray-500">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                            </div>
+                            <hr class="text-gray-200 my-10">
+                        </div>
+
+                        <div>
+                            <h1 class="font-bold">بيانات المقبولين حسب الجنس</h1>
+                            <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60">
+                                <div class="flex">
+                                    <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate2">0</h1>
+                                    <div class="flex items-center my-auto pb-1.5">
+                                        <svg class="rate2 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(1, 'rate2')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate2 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(2, 'rate2')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate2 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(3, 'rate2')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate2 w-3 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(4, 'rate2')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                        <svg class="rate2 w-3 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" onclick="rating(5, 'rate2')">
+                                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flex mx-auto">
+                                    <svg class="w-3 pb-1.5 fill-none text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
+                                </div>
+                                <div class="flex align-bottom">
+                                    <svg class="w-3 fill-none pb-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+                                    </svg>
+                                    <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
+                                </div>
+                            </div>
+                            <p>بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس.</p>
+                            <div class="flex my-3">
+                                <a href="#" class="bg-yellow-400 text-white w-16 text-center align-middle pt-1 ml-2">XLSX</a>
+                                <a href="#" class="bg-brand-header-1 text-white w-16 text-center align-middle pt-1 ml-2">CSV</a>
+                                <a href="#" class="bg-green-700 text-white w-16 text-center align-middle pt-1 ml-2">JSON</a>
+                                <a href="#" class="bg-orange-600 text-white w-16 text-center align-middle pt-1 ml-2">XML</a>
+                                <p class="text-left w-full text-gray-500">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                            </div>
+                            <hr class="text-gray-200 my-10">
+                        </div>
                     </div>
                 </div>
             </main>
@@ -221,5 +316,7 @@
                 <div class="small:col-span-full small:mx-auto text-left">تطوير عمادة تقنية المعلومات</div>
             </div>            
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>

@@ -11,4 +11,12 @@
         margin-right: auto;
         margin-left: auto;
     }
+    .activeTap {
+        pointer-events: none;
+        @apply text-white bg-brand-header-1
+    }
+    .activeTap div svg {
+        pointer-events: none;
+        @apply fill-white
+    }
 }
