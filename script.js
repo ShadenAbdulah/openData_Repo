@@ -3,9 +3,9 @@ function alertFun() {
 }
 
 function shiftTaps(tapId, contentId) {
-    let toNonActive = document.getElementsByClassName('activeTap');
+    let toNonActive = document.getElementsByClassName('activeTab');
     for (let i = 0; i < toNonActive.length; i++) {
-        toNonActive[i].classList.replace('activeTap', 'nonActiveTap');
+        toNonActive[i].classList.replace('activeTab', 'nonactiveTab');
     }
 
     let toHidden = document.getElementsByClassName('content');
@@ -15,7 +15,7 @@ function shiftTaps(tapId, contentId) {
 
     let toActive = document.getElementById(tapId);
     let content = document.getElementById(contentId);
-    toActive.classList.replace('nonActiveTap', 'activeTap');
+    toActive.classList.replace('nonactiveTab', 'activeTab');
     content.classList.replace('hidden', 'block');
 }
 
