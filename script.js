@@ -25,9 +25,24 @@ function rating(rate, text) {
 
     let stars = document.getElementsByClassName(text);
     for (let i = 0; i < rate; i++) {
-        stars[i].classList.replace('text-gray-300','text-yellow-500');
+        stars[i].classList.replace('fill-gray-400','fill-amber-500');
     }
     for (let i = rate; i < stars.length; i++) {
-        stars[i].classList.replace('text-yellow-500', 'text-gray-300');
+        stars[i].classList.replace('fill-amber-500', 'fill-gray-400');
     }
 }
+
+let searchIcon = document.getElementById('searchIcon');
+searchIcon.addEventListener('click', function () {
+    let searchBar = document.getElementById('searchBar');
+    if (searchBar.classList.contains('hidden'))
+        searchBar.classList.replace('hidden', 'block');
+    else  searchBar.classList.replace('block', 'hidden');
+})
+
+let lang = document.getElementById('lang');
+
+lang.addEventListener('click', function () {
+    if (lang.innerText === "EN") lang.innerText = "ع";
+    else lang.innerText = "EN";
+})

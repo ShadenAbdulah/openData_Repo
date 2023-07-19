@@ -93,8 +93,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tailwindcss -i ./css/style.css -o ./public/tailwind.css",
-    "watch": "tailwindcss -i ./css/style.css -o ./public/tailwind.css -w"
+    "build": "postcss ./css/style.css -o ./public/tailwind.css",
+    "watch": "postcss ./css/style.css -o ./public/tailwind.css -w"
   },
   "keywords": [],
   "author": "",
