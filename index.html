@@ -12,6 +12,8 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
           rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -19,20 +21,20 @@
     <div class="bg-brand-header-0 h-12 xs:h-24">
         <section class="w-[95%] transition-all grid grid-cols-5 py-2.5 my-auto mx-auto" id="header_1">
             <button class="col-span-1 rounded-full border border-blue-50 w-16 justify-center my-auto text-white text-sm h-7 hover:bg-brand-header-1 active:bg-brand-header-2 active:ring-2 transition-all">
-                MyQu
+                MyQU
             </button>
             <div class="xs:absolute xs:top-16 col-span-3 mr-1 w-full grid grid-cols-4 my-auto xs:px-5">
                 <div class="text-white font-tajawal text-sm col-span-2">
-                    <a class="flex xs:text-right" href="#">معلومات لــ...
+                    <a class="flex xs:text-right hover:opacity-30" href="#">معلومات لــ...
                         <span class=""><svg class="h-4 w-4 fill-stroke text-white" fill="none" stroke="currentColor"
                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             viewBox="0 0 24 24">  <polyline
                                 points="6 9 12 15 18 9"></polyline></svg></span></a>
                 </div>
-                <div class="text-white font-tajawal text-sm col-span-1">
+                <div class="text-white font-tajawal text-sm col-span-1 hover:opacity-30">
                     <a href="#">التقويم</a>
                 </div>
-                <div class="text-white font-tajawal text-sm col-span-1 xs:text-left xs:pl-2">
+                <div class="text-white font-tajawal text-sm col-span-1 xs:text-left xs:pl-2 hover:opacity-30">
                     <a href="#">الأخبار</a>
                 </div>
             </div>
@@ -40,14 +42,14 @@
                                                                                   src="images/QU logo.svg"></a>
             <div class="col-span-1 xs:-ml-10 xs:mt-2">
                 <div class="grid grid-cols-2 space-x-3 float-left">
-                    <div class="border w-7 h-7 rounded-full p-1 justify-center cursor-pointer" id="searchIcon">
+                    <div class="border w-7 h-7 rounded-full p-1 justify-center cursor-pointer hover:opacity-30" id="searchIcon">
                         <svg class="h-4 w-4 text-white mx-auto my-auto" fill="none" stroke="currentColor"
                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
                         </svg>
                     </div>
-                    <div class="border w-7 h-7 rounded-full p-1 justify-center text-center text-white font-tajawal cursor-pointer"
+                    <div class="border w-7 h-7 rounded-full p-1 justify-center text-center text-white font-tajawal cursor-pointer hover:opacity-30"
                          id="lang">
                         EN
                     </div>
@@ -61,11 +63,11 @@
         <a class="xs:hidden col-span-1 w-3/4 my-auto" href="#"><img alt="Qassim University Logo"
                                                                     src="images/QU logo.png"></a>
         <div class="col-span-5 grid grid-cols-6 gap-x-3 h-full justify-center mx-auto py-5 font-tajawal text-xs font-normal mt-1 xs:px-3 other:-ml-0">
-            <a href="#">الجامعة</a>
-            <a href="#">الكليات</a>
-            <a href="#">القبول</a>
-            <a href="#">الأبحاث</a>
-            <a class="col-span-2 text-left" href="#">الحياة الجامعية</a>
+            <a href="#" class="hover:opacity-30">الجامعة</a>
+            <a href="#" class="hover:opacity-30">الكليات</a>
+            <a href="#" class="hover:opacity-30">القبول</a>
+            <a href="#" class="hover:opacity-30">الأبحاث</a>
+            <a class="col-span-2 text-left hover:opacity-30" href="#">الحياة الجامعية</a>
         </div>
     </section>
 </header>
@@ -311,7 +313,10 @@
                         <label for="notes" class="font-medium">ما هي البيانات التي ترغب بإتاحتها عبر منصة البيانات المفتوحة؟</label> <br>
                         <textarea id="notes" cols="100" rows="3" class="border border-gray-300 mt-2"></textarea>
                         <hr class="border-gray-100">
-                        <button class="w-36 h-10 float-left border border-gray-300 bg-brand-header-4 text-white mt-5" type="submit">إرسال</button>
+                        <div class="flex-col">
+                            <div class="g-recaptcha float-right mt-5" data-sitekey="6LfbYjknAAAAABNxXFs1r-TlXQ3u-5jEugUlTwWG"></div>
+                            <button class="w-36 h-10 float-left border border-gray-300 bg-brand-header-4 text-white mt-10" type="submit">إرسال</button>
+                        </div>
                     </form>
 
                 </div>
