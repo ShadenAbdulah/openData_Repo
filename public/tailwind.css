@@ -873,6 +873,9 @@ video {
 .fill-white {
   fill: #fff;
 }
+.fill-amber-500 {
+  fill: #f59e0b;
+}
 .p-1 {
   padding: 0.25rem;
 }
