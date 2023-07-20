@@ -5,7 +5,7 @@ function alertFun() {
 function shiftTaps(tapId, contentId) {
     let toNonActive = document.getElementsByClassName('activeTab');
     for (let i = 0; i < toNonActive.length; i++) {
-        toNonActive[i].classList.replace('activeTab', 'nonactiveTab');
+        toNonActive[i].classList.remove('activeTab');
     }
 
     let toHidden = document.getElementsByClassName('content');
@@ -15,7 +15,7 @@ function shiftTaps(tapId, contentId) {
 
     let toActive = document.getElementById(tapId);
     let content = document.getElementById(contentId);
-    toActive.classList.replace('nonactiveTab', 'activeTab');
+    toActive.classList.toggle('activeTab');
     content.classList.replace('hidden', 'block');
 }
 
