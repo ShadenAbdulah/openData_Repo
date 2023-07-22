@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
           rel="stylesheet">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -42,7 +42,8 @@
                                                                                   src="images/QU logo.svg"></a>
             <div class="col-span-1 xs:-ml-10 xs:mt-2">
                 <div class="grid grid-cols-2 space-x-3 float-left">
-                    <div class="border w-7 h-7 rounded-full p-1 justify-center cursor-pointer hover:opacity-30" id="searchIcon">
+                    <div class="border w-7 h-7 rounded-full p-1 justify-center cursor-pointer hover:opacity-30"
+                         id="searchIcon">
                         <svg class="h-4 w-4 text-white mx-auto my-auto" fill="none" stroke="currentColor"
                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                             <circle cx="11" cy="11" r="8"></circle>
@@ -54,7 +55,8 @@
                         EN
                     </div>
                 </div>
-                <input class="hidden absolute w-52 bg-white top-10 left-24 shadow rounded-md outline-offset-0 pt-1.5 px-2 font-tajawal font-light border border-blue-50" id="searchBar" placeholder="ابحث.."
+                <input class="hidden absolute w-52 bg-white top-10 left-24 shadow rounded-md outline-offset-0 pt-1.5 px-2 font-tajawal font-light border border-blue-50"
+                       id="searchBar" placeholder="ابحث.."
                        type="search">
             </div>
         </section>
@@ -63,10 +65,10 @@
         <a class="xs:hidden col-span-1 w-3/4 my-auto" href="#"><img alt="Qassim University Logo"
                                                                     src="images/QU logo.png"></a>
         <div class="col-span-5 grid grid-cols-6 gap-x-3 h-full justify-center mx-auto py-5 font-tajawal text-xs font-normal mt-1 xs:px-3 other:-ml-0">
-            <a href="#" class="hover:opacity-30">الجامعة</a>
-            <a href="#" class="hover:opacity-30">الكليات</a>
-            <a href="#" class="hover:opacity-30">القبول</a>
-            <a href="#" class="hover:opacity-30">الأبحاث</a>
+            <a class="hover:opacity-30" href="#">الجامعة</a>
+            <a class="hover:opacity-30" href="#">الكليات</a>
+            <a class="hover:opacity-30" href="#">القبول</a>
+            <a class="hover:opacity-30" href="#">الأبحاث</a>
             <a class="col-span-2 text-left hover:opacity-30" href="#">الحياة الجامعية</a>
         </div>
     </section>
@@ -103,9 +105,10 @@
             <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 activeTab"
                  id="about_openData_tap" onclick="shiftTaps('about_openData_tap', 'about_openData')">
                 <div class="col-span-1 mx-auto my-auto">
-                    <svg class="h-4 small:h-2 text-brand-header-1 fill-none hover:fill-brand-header-1"
+                    <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
                          stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"
+                        <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round"
+                              stroke-linejoin="round"
                               stroke-width="2"/>
                     </svg>
                 </div>
@@ -117,7 +120,8 @@
                     <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
                          stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" stroke-linecap="round"
+                        <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                              stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
@@ -129,7 +133,8 @@
                     <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
                          stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" stroke-linecap="round"
+                        <path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+                              stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
@@ -141,7 +146,8 @@
                     <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
                          stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" stroke-linecap="round"
+                        <path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+                              stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
@@ -157,51 +163,94 @@
                 وهي تهدف إلى تعزيز المشاركة المجتمعية ورفع مستوى نشر المعرفة وعلى زائري البوابة والمستفيدين من خدماتها
                 الاطلاع على سياسة استخدام تلك البيانات لمعرفة أي تحديثات يتم عليها.</p>
         </div>
-
         <div class="hidden content font-tajawal" id="openData_lib">
-            <div class="border border-gray-100 h-fit mx-auto my-10 py-5 px-20 bg-white w-full small:w-5/6">
+
+            <div class="grid grid-rows-2 mt-10">
+                <div class="flex flex-auto justify-end">
+                    <p class="font-thin text-xs mx-5 my-auto">3 مجموعات بيانات موجودة</p>
+                    <svg class="w-6 h-6 stroke-1 stroke-brand-header-2 my-auto active:stroke-2 active:stroke-brand-header-1 focus:stroke-2 focus:stroke-brand-header-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
+                    </svg>
+                </div>
+                <div class="flex gap-1 xs:flex-col small:flex-col">
+                    <div class="flex p-2 border border-gray-400">
+                        <select class="text-sm font-thin w-full focus:outline-none">
+                            <option>المجموعات</option>
+                            <option>المجموعة الأولى</option>
+                            <option>المجموعة الثانية</option>
+                            <option>المجموعة الثالثة</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-between p-2 border border-gray-400">
+                        <select class="text-sm font-thin w-full focus:outline-none">
+                            <option>الوسوم</option>
+                            <option>طلاب</option>
+                            <option>تعليم</option>
+                            <option>إحصائيات</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-between p-2 border border-gray-400">
+                        <select class="text-sm font-thin w-full focus:outline-none">
+                            <option>الترتيب بحسب</option>
+                            <option>أبجدي تصاعدي</option>
+                            <option>أبجدي تنازلي</option>
+                            <option>الأحدث</option>
+                            <option>الأقدم</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-100 h-fit mx-auto my-5 py-5 px-10 bg-white">
                 <div>
                     <h1 class="font-bold">بيانات أعضاء هيئة التدريس</h1>
-                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60">
-                        <div class="flex">
+                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full small:w-full">
+                        <div class="flex items-center gap-1">
                             <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate1">0</h1>
                             <div class="flex items-center my-auto pb-1.5">
                                 <svg aria-hidden="true" class="rate1 w-3 fill-gray-400"
-                                     onclick="rating(1, 'rate1')" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                                </svg>
-                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(2, 'rate1')" viewBox="0 0 22 20"
+                                     onclick="rating(1, 'rate1')" viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(3, 'rate1')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(2, 'rate1')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(4, 'rate1')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(3, 'rate1')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(5, 'rate1')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(4, 'rate1')"
+                                     viewBox="0 0 22 20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                                <svg aria-hidden="true" class="rate1 w-3 fill-gray-400" onclick="rating(5, 'rate1')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
                             </div>
                         </div>
-                        <div class="flex mx-auto">
+                        <div class="flex w-fit">
                             <svg class="w-3 pb-1.5 fill-none text-black" stroke="currentColor"
                                  stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" stroke-linecap="round"
+                                <path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                      stroke-linecap="round"
                                       stroke-linejoin="round"/>
                                 <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round"
                                       stroke-linejoin="round"/>
                             </svg>
                             <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
                         </div>
-                        <div class="flex align-bottom">
+                        <div class="flex w-fit align-bottom">
                             <svg class="w-3 fill-none pb-1.5" stroke="currentColor" stroke-width="1.5"
                                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" stroke-linecap="round"
+                                <path d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                      stroke-linecap="round"
                                       stroke-linejoin="round"/>
                             </svg>
                             <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
@@ -209,56 +258,65 @@
                     </div>
                     <p>بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة
                         التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس.</p>
-                    <div class="flex my-3">
-                        <a class="bg-yellow-400 text-white w-14 text-center align-middle pt-1 ml-2" href="#">XLSX</a>
-                        <a class="bg-brand-header-1 text-white w-14 text-center align-middle pt-1 ml-2" href="#">CSV</a>
-                        <p class="text-left w-full text-gray-500">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                    <div class="flex small:flex-col-reverse xs:flex-col-reverse">
+                        <div class="flex my-auto">
+                            <a class="bg-yellow-400 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XLSX</a>
+                            <a class="bg-brand-header-1 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">CSV</a>
+                        </div>
+                        <p class="text-left xs:text-right small:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
                     </div>
-                    <hr class="text-gray-200 my-10">
+                    <hr class="text-gray-200 mt-5 mb-10">
                 </div>
 
                 <div>
                     <h1 class="font-bold">بيانات المقبولين حسب الجنس</h1>
-                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60">
-                        <div class="flex">
+                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full small:w-full">
+                        <div class="flex items-center gap-1">
                             <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate2">0</h1>
                             <div class="flex items-center my-auto pb-1.5">
-                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(1, 'rate2')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(1, 'rate2')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(2, 'rate2')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(2, 'rate2')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(3, 'rate2')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(3, 'rate2')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(4, 'rate2')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(4, 'rate2')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
-                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(5, 'rate2')" viewBox="0 0 22 20"
+                                <svg aria-hidden="true" class="rate2 w-3 fill-gray-400" onclick="rating(5, 'rate2')"
+                                     viewBox="0 0 22 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                                 </svg>
                             </div>
                         </div>
-                        <div class="flex mx-auto">
+                        <div class="flex w-fit">
                             <svg class="w-3 pb-1.5 fill-none text-black" stroke="currentColor"
                                  stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" stroke-linecap="round"
+                                <path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                      stroke-linecap="round"
                                       stroke-linejoin="round"/>
                                 <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round"
                                       stroke-linejoin="round"/>
                             </svg>
                             <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
                         </div>
-                        <div class="flex align-bottom">
+                        <div class="flex w-fit align-bottom">
                             <svg class="w-3 fill-none pb-1.5" stroke="currentColor" stroke-width="1.5"
                                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" stroke-linecap="round"
+                                <path d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                      stroke-linecap="round"
                                       stroke-linejoin="round"/>
                             </svg>
                             <h1 class="text-sm mr-1.5 text-gray-600">2534</h1>
@@ -266,50 +324,54 @@
                     </div>
                     <p>بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين
                         حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس.</p>
-                    <div class="flex my-3">
-                        <a class="bg-yellow-400 text-white w-16 text-center align-middle pt-1 ml-2" href="#">XLSX</a>
-                        <a class="bg-brand-header-1 text-white w-16 text-center align-middle pt-1 ml-2" href="#">CSV</a>
-                        <a class="bg-green-700 text-white w-16 text-center align-middle pt-1 ml-2" href="#">JSON</a>
-                        <a class="bg-orange-600 text-white w-16 text-center align-middle pt-1 ml-2" href="#">XML</a>
-                        <p class="text-left w-full text-gray-500">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                    <div class="flex small:flex-col-reverse xs:flex-col-reverse">
+                        <div class="flex my-auto">
+                            <a class="bg-yellow-400 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XLSX</a>
+                            <a class="bg-brand-header-1 text-white w-fit h-fit text-center align-middle p-2 ml-2"
+                               href="#">CSV</a>
+                            <a class="bg-green-700 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">JSON</a>
+                            <a class="bg-orange-600 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XML</a>
+                        </div>
+                        <p class="text-left xs:text-right small:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
                     </div>
-                    <hr class="text-gray-200 my-10">
+                    <hr class="text-gray-200 mt-5 mb-10">
                 </div>
             </div>
-
-            <div class="border border-gray-100 h-fit mx-auto grid grid-row-5 bg-white py-5">
-                <div>
-                    <h1 class="font-medium mx-10 my-5">استطلاع رأي</h1>
-                    <hr class="border-gray-100">
-                </div>
-                <div>
-                    <form class="mx-10 my-5">
-                        <label for="estimateRadio" class="font-medium">ما مدى رضاك عن نوعية البيانات المفتوحة المقدمة من جامعة القصيم؟</label>
-                        <div id="estimateRadio" class="flex gap-7 mt-3 mb-10">
-                            <div>
-                                <input type="radio" name="estimateRadio" value="excellent" id="excellent" checked>
-                                <label for="excellent">ممتاز</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="estimateRadio" value="good" id="good">
-                                <label for="good">جيد</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="estimateRadio" value="fair" id="fair">
-                                <label for="fair">مقبول</label>
-                            </div>
-                        </div>
-
-                        <label for="notes" class="font-medium">ما هي البيانات التي ترغب بإتاحتها عبر منصة البيانات المفتوحة؟</label> <br>
-                        <textarea id="notes" cols="100" rows="3" class="border border-gray-300 mt-2"></textarea>
+            <div class="border border-gray-100 h-fit mx-auto bg-white my-5 p-5">
+                <form>
+                    <div class="my-5">
+                        <h1 class="font-medium mx-10 mb-5">استطلاع رأي</h1>
                         <hr class="border-gray-100">
-                        <div class="flex-col">
-                            <div class="g-recaptcha float-right mt-5" data-sitekey="6LfbYjknAAAAABNxXFs1r-TlXQ3u-5jEugUlTwWG"></div>
-                            <button class="w-36 h-10 float-left border border-gray-300 bg-brand-header-4 text-white mt-10" type="submit">إرسال</button>
+                    </div>
+                    <label class="font-medium" for="estimateRadio">ما مدى رضاك عن نوعية البيانات المفتوحة المقدمة من جامعة
+                        القصيم؟</label>
+                    <div class="flex gap-7 mt-3 mb-10 mx-10" id="estimateRadio">
+                        <div>
+                            <input checked id="excellent" name="estimateRadio" type="radio" value="excellent">
+                            <label for="excellent">ممتاز</label>
                         </div>
-                    </form>
+                        <div>
+                            <input id="good" name="estimateRadio" type="radio" value="good">
+                            <label for="good">جيد</label>
+                        </div>
+                        <div>
+                            <input id="fair" name="estimateRadio" type="radio" value="fair">
+                            <label for="fair">مقبول</label>
+                        </div>
+                    </div>
 
-                </div>
+                    <label class="font-medium" for="notes">ما هي البيانات التي ترغب بإتاحتها عبر منصة البيانات
+                        المفتوحة؟</label> <br>
+                    <textarea class="border border-gray-300 mt-2 w-full" id="notes"></textarea>
+                    <hr class="border-gray-100">
+                    <div class="flex xs:flex-col small:flex-col">
+                        <div class="g-recaptcha float-right mt-5 flex-grow"
+                             data-sitekey="6LfbYjknAAAAABNxXFs1r-TlXQ3u-5jEugUlTwWG"></div>
+                        <button class="w-fit px-7 py-px float-left border border-gray-300 bg-brand-header-4 text-white mt-10"
+                                type="submit">إرسال
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
