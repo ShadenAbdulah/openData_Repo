@@ -19,13 +19,13 @@
 <body>
 <header>
     <div class="bg-brand-header-0 h-12 xs:h-24">
-        <section class="w-[95%] transition-all grid grid-cols-5 py-2.5 my-auto mx-auto" id="header_1">
+        <section class="@container w-5/6 transition-all grid grid-cols-5 py-2.5 my-auto mx-auto" id="header_1">
             <button class="col-span-1 rounded-full border border-blue-50 w-16 justify-center my-auto text-white text-sm h-7 hover:bg-brand-header-1 active:bg-brand-header-2 active:ring-2 transition-all">
                 MyQU
             </button>
-            <div class="xs:absolute xs:top-16 col-span-3 mr-1 w-full grid grid-cols-4 my-auto xs:px-5">
+            <div class="2xs:absolute 2xs:top-16 col-span-3 mr-1 w-full grid grid-cols-4 my-auto 2xs:px-5">
                 <div class="text-white font-tajawal text-sm col-span-2">
-                    <a class="flex xs:text-right hover:opacity-30" href="#">معلومات لــ...
+                    <a class="flex 2xs:text-right hover:opacity-30" href="#">معلومات لــ...
                         <span class=""><svg class="h-4 w-4 fill-stroke text-white" fill="none" stroke="currentColor"
                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             viewBox="0 0 24 24">  <polyline
@@ -34,13 +34,13 @@
                 <div class="text-white font-tajawal text-sm col-span-1 hover:opacity-30">
                     <a href="#">التقويم</a>
                 </div>
-                <div class="text-white font-tajawal text-sm col-span-1 xs:text-left xs:pl-2 hover:opacity-30">
+                <div class="text-white font-tajawal text-sm col-span-1 2xs:text-left 2xs:pl-2 hover:opacity-30">
                     <a href="#">الأخبار</a>
                 </div>
             </div>
-            <a class="hidden xs:block col-span-2 w-full mx-7 -mt-1" href="#"><img alt="Qassim University Logo"
-                                                                                  src="images/QU logo.svg"></a>
-            <div class="col-span-1 xs:-ml-10 xs:mt-2">
+            <a class="hidden 2xs:block col-span-2 w-full mx-7 -mt-1" href="#">
+                <img alt="Qassim University Logo" src="images/QU logo.svg"></a>
+            <div class="col-span-1 2xs:-ml-10 2xs:mt-2">
                 <div class="grid grid-cols-2 space-x-3 float-left">
                     <div class="border w-7 h-7 rounded-full p-1 justify-center cursor-pointer hover:opacity-30"
                          id="searchIcon">
@@ -61,10 +61,10 @@
             </div>
         </section>
     </div>
-    <section class="w-[95%] grid grid-cols-6 h-18 my-1 mx-auto bg-white xs:block" id="header_2">
-        <a class="xs:hidden col-span-1 w-3/4 my-auto" href="#"><img alt="Qassim University Logo"
-                                                                    src="images/QU logo.png"></a>
-        <div class="col-span-5 grid grid-cols-6 gap-x-3 h-full justify-center mx-auto py-5 font-tajawal text-xs font-normal mt-1 xs:px-3 other:-ml-0">
+    <section class="@container w-5/6 grid grid-cols-6 h-18 my-1 mx-auto bg-white 2xs:block" id="header_2">
+        <a class="2xs:hidden col-span-1 w-3/4 my-auto" href="#">
+            <img alt="Qassim University Logo" src="images/QU logo.png"></a>
+        <div class="col-span-5 grid grid-cols-6 gap-x-3 h-full justify-center mx-auto py-5 font-tajawal text-xs font-normal mt-1 2xs:px-3">
             <a class="hover:opacity-30" href="#">الجامعة</a>
             <a class="hover:opacity-30" href="#">الكليات</a>
             <a class="hover:opacity-30" href="#">القبول</a>
@@ -76,8 +76,8 @@
 
 <main class="bg-brand-header-3 w-full pb-3">
     <div class="h-60 bg-brand-header-1">
-        <section class="container mx-auto grid grid-rows-5 px-3" id="header_3">
-            <div class="row-span-2 font-tajawal pt-16 text-white text-xs other:px-10"><h1>الرئيسة> البيانات
+        <section class="@container w-5/6 mx-auto grid grid-rows-5 px-3" id="header_3">
+            <div class="row-span-2 font-tajawal pt-16 text-white text-xs px-10 2xs:px-0 xs:px-0"><h1>الرئيسة> البيانات
                 المفتوحة></h1></div>
             <div class="row-span-1 font-tajawal mx-auto mt-5 text-white text-2xl"><h1>ابحث عن بيانات</h1></div>
 
@@ -100,62 +100,57 @@
         </section>
     </div>
 
-    <div class="container mx-auto my-auto other:px-5">
-        <div class="border border-gray-100 mt-10 bg-white w-full small:w-5/6 mx-auto grid grid-cols-4 small:grid-cols-2">
-            <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 activeTab"
+    <div class="@container w-5/6 mx-auto my-auto px-5 2xs:px-0 xs:px-0">
+        <div class="border border-gray-100 mt-10 bg-white w-full xs:w-5/6 mx-auto grid grid-cols-4 xs:grid-cols-2">
+            <div class="border-l xs:border-b border-gray-100 grid grid-cols-5 px-2 py-2 xs:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1 activeTab"
                  id="about_openData_tap" onclick="shiftTaps('about_openData_tap', 'about_openData')">
                 <div class="col-span-1 mx-auto my-auto">
-                    <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
-                         stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"/>
+                    <svg class="h-4 stroke-1 stroke-brand-header-1 fill-none group-hover:fill-brand-header-1" viewBox="0 0 24 24">
+                        <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="col-span-4 mx-2 my-auto font-tajawal font-medium">عن البيانات المفتوحة</div>
+                <div class="col-span-4 mx-2 my-auto font-tajawal font-medium mx-2 text-[90%]">عن البيانات المفتوحة</div>
             </div>
-            <div class="border-l small:border-b border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
+            <div class="border-l xs:border-b border-gray-100 grid grid-cols-5 px-2 py-2 xs:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
                  id="openData_lib_tap" onclick="shiftTaps('openData_lib_tap', 'openData_lib')">
                 <div class="col-span-1 mx-auto my-auto">
-                    <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
-                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    <svg class="h-4 stroke-1 stroke-brand-header-1 fill-none group-hover:fill-brand-header-1 group-hover:stroke-white"
+                         viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
                               stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="col-span-4 mx-2 my-auto font-tajawal font-medium">مكتبة البيانات المفتوحة</div>
+                <div class="col-span-4 mx-2 my-auto font-tajawal font-medium mx-2 text-[90%]">مكتبة البيانات المفتوحة</div>
             </div>
-            <div class="border-l border-gray-100 grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
+            <div class="border-l border-gray-100 grid grid-cols-5 px-2 py-2 xs:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
                  onclick="alertFun()">
                 <div class="col-span-1 mx-auto my-auto">
-                    <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
-                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-4 stroke-1 stroke-brand-header-1 fill-none group-hover:fill-brand-header-1 group-hover:stroke-white"
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
                               stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="col-span-4 my-auto font-tajawal font-medium mx-2">سياسة البيانات المفتوحة</div>
+                <div class="col-span-4 my-auto font-tajawal font-medium mx-2 text-[90%]">سياسة البيانات المفتوحة</div>
             </div>
-            <div class="grid grid-cols-5 px-2 py-2 text-[5%] small:mx-0 hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
+            <div class="grid grid-cols-5 px-2 py-2 xs:mx-0 group hover:bg-brand-header-1 hover:bg-opacity-10 hover:text-brand-header-1"
                  onclick="alertFun()">
                 <div class="col-span-1 mx-auto my-auto">
-                    <svg class="h-4 text-brand-header-1 fill-none hover:fill-brand-header-1"
-                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    <svg class="h-4 stroke-1 stroke-brand-header-1 fill-none group-hover:fill-brand-header-1" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
                               stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="col-span-4 my-auto font-tajawal font-medium mx-2">إرشادات الإستخدام</div>
+                <div class="col-span-4 my-auto font-tajawal font-medium mx-2 text-[90%]">إرشادات الإستخدام</div>
             </div>
         </div>
 
-        <div class="block content border border-gray-100 h-fit mx-auto my-10 py-5 px-10 bg-white w-full small:w-5/6"
+        <div class="block content border border-gray-100 h-fit mx-auto my-10 py-5 px-10 bg-white w-full xs:w-5/6"
              id="about_openData">
             <h1 class="font-tajawal font-bold text-lg w-full">عن البيانات المفتوحة</h1>
             <p class="font-tajawal mt-8 text-justify">البيانات المفتوحة متاحة لجميع مستخدمي البوابة الإلكترونية لجامعة
@@ -164,15 +159,14 @@
                 الاطلاع على سياسة استخدام تلك البيانات لمعرفة أي تحديثات يتم عليها.</p>
         </div>
         <div class="hidden content font-tajawal" id="openData_lib">
-
             <div class="grid grid-rows-2 mt-10">
                 <div class="flex flex-auto justify-end">
                     <p class="font-thin text-xs mx-5 my-auto">3 مجموعات بيانات موجودة</p>
-                    <svg class="w-6 h-6 stroke-1 stroke-brand-header-2 my-auto active:stroke-2 active:stroke-brand-header-1 focus:stroke-2 focus:stroke-brand-header-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <svg id="filter" onclick="filter()" class="w-6 h-6 fill-none my-auto nonActiveFilter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
                     </svg>
                 </div>
-                <div class="flex gap-1 xs:flex-col small:flex-col">
+                <div id="filter-fields" class="hidden flex gap-1 xs:flex-col xs:flex-col">
                     <div class="flex p-2 border border-gray-400">
                         <select class="text-sm font-thin w-full focus:outline-none">
                             <option>المجموعات</option>
@@ -204,7 +198,7 @@
             <div class="border border-gray-100 h-fit mx-auto my-5 py-5 px-10 bg-white">
                 <div>
                     <h1 class="font-bold">بيانات أعضاء هيئة التدريس</h1>
-                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full small:w-full">
+                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full xs:w-full">
                         <div class="flex items-center gap-1">
                             <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate1">0</h1>
                             <div class="flex items-center my-auto pb-1.5">
@@ -258,19 +252,19 @@
                     </div>
                     <p>بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة
                         التدريس بيانات أعضاء هيئة التدريس بيانات أعضاء هيئة التدريس.</p>
-                    <div class="flex small:flex-col-reverse xs:flex-col-reverse">
+                    <div class="flex xs:flex-col-reverse xs:flex-col-reverse">
                         <div class="flex my-auto">
                             <a class="bg-yellow-400 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XLSX</a>
                             <a class="bg-brand-header-1 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">CSV</a>
                         </div>
-                        <p class="text-left xs:text-right small:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                        <p class="text-left xs:text-right xs:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
                     </div>
                     <hr class="text-gray-200 mt-5 mb-10">
                 </div>
 
                 <div>
                     <h1 class="font-bold">بيانات المقبولين حسب الجنس</h1>
-                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full small:w-full">
+                    <div class="w-2/6 grid grid-cols-3 font-thin py-5 opacity-60 xs:w-full xs:w-full">
                         <div class="flex items-center gap-1">
                             <h1 class="my-auto ml-1 text-sm text-gray-600" id="rate2">0</h1>
                             <div class="flex items-center my-auto pb-1.5">
@@ -324,7 +318,7 @@
                     </div>
                     <p>بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين
                         حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس بيانات المقبولين حسب الجنس.</p>
-                    <div class="flex small:flex-col-reverse xs:flex-col-reverse">
+                    <div class="flex xs:flex-col-reverse xs:flex-col-reverse">
                         <div class="flex my-auto">
                             <a class="bg-yellow-400 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XLSX</a>
                             <a class="bg-brand-header-1 text-white w-fit h-fit text-center align-middle p-2 ml-2"
@@ -332,7 +326,7 @@
                             <a class="bg-green-700 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">JSON</a>
                             <a class="bg-orange-600 text-white w-fit h-fit text-center align-middle p-2 ml-2" href="#">XML</a>
                         </div>
-                        <p class="text-left xs:text-right small:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
+                        <p class="text-left xs:text-right xs:text-right w-full text-gray-500 my-3">تاريخ أخر تحديث ٢٩/١٢/١٤٤٤</p>
                     </div>
                     <hr class="text-gray-200 mt-5 mb-10">
                 </div>
@@ -364,7 +358,7 @@
                         المفتوحة؟</label> <br>
                     <textarea class="border border-gray-300 mt-2 w-full" id="notes"></textarea>
                     <hr class="border-gray-100">
-                    <div class="flex xs:flex-col small:flex-col">
+                    <div class="flex xs:flex-col xs:flex-col">
                         <div class="g-recaptcha float-right mt-5 flex-grow"
                              data-sitekey="6LfbYjknAAAAABNxXFs1r-TlXQ3u-5jEugUlTwWG"></div>
                         <button class="w-fit px-7 py-px float-left border border-gray-300 bg-brand-header-4 text-white mt-10"
@@ -378,11 +372,11 @@
 </main>
 
 <footer class="bg-brand-header-0 px-5 py-5">
-    <div class="w-[95%] grid grid-cols-5 gap-2 small:grid-cols-4 mx-auto">
+    <div class="@container w-5/6 grid grid-cols-5 gap-2 xs:grid-cols-4 mx-auto">
 
         <div class="col-span-1 group">
-            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white small:text-[7px]">معلومات تخص</h1>
-            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white small:gap-2 small:text-[6px] group-hover:text-[#579CD8]">
+            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white xs:text-[7px]">معلومات تخص</h1>
+            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white xs:gap-2 xs:text-[6px] group-hover:text-[#579CD8]">
                 <a class="hover:text-brand-header-1" href="#" target="_blank">الطلاب</a>
                 <a class="hover:text-brand-header-1" href="#" target="_blank">أعضاء هيئة التدريس</a>
                 <a class="hover:text-brand-header-1" href="#" target="_blank">الموظفين</a>
@@ -391,8 +385,8 @@
         </div>
 
         <div class="col-span-1 group">
-            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white small:text-[7px]">الخدمات الإلكترونية</h1>
-            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white small:gap-2 small:text-[6px] group-hover:text-[#579CD8]">
+            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white xs:text-[7px]">الخدمات الإلكترونية</h1>
+            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white xs:gap-2 xs:text-[6px] group-hover:text-[#579CD8]">
                 <a class="hover:text-brand-header-1" href="https://myqu.qu.edu.sa/login" target="_blank">MyQU</a>
                 <a class="hover:text-brand-header-1" href="https://guest.qu.edu.sa/login" target="_blank">بوابة
                     الزوار</a>
@@ -407,8 +401,8 @@
         </div>
 
         <div class="col-span-1 group">
-            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white small:text-[7px]">أخرى</h1>
-            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white small:gap-2 small:text-[6px] group-hover:text-[#579CD8]">
+            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white xs:text-[7px]">أخرى</h1>
+            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white xs:gap-2 xs:text-[6px] group-hover:text-[#579CD8]">
                 <a class="hover:text-brand-header-1" href="#" target="_blank">التقويم</a>
                 <a class="hover:text-brand-header-1" href="#" target="_blank">منصة الفعاليات</a>
                 <a class="hover:text-brand-header-1" href="https://data.qu.edu.sa/" target="_blank">البيانات
@@ -421,19 +415,19 @@
         </div>
 
         <div class="col-span-1 group">
-            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white small:text-[7px]">تواصل معنا</h1>
-            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white small:gap-2 small:text-[6px] group-hover:text-[#579CD8]">
+            <h1 class="mb-5 font-tajawal font-bold text-[10px] text-white xs:text-[7px]">تواصل معنا</h1>
+            <div class="grid grid-rows-7 gap-4 font-tajawal font-normal text-[10px] text-white xs:gap-2 xs:text-[6px] group-hover:text-[#579CD8]">
                 <a class="hover:text-brand-header-1" href="#">دليل التواصل</a>
                 <a class="hover:text-brand-header-1" href="#">خدمة المستفيدين</a>
                 <a class="hover:text-brand-header-1" href="#">ساعد التقني</a>
             </div>
         </div>
 
-        <div class="col-span-1 grid grid-rows-3 xs:mt-5 small:grid-cols-0 small:col-span-full small:w-1/2 small:mx-auto">
+        <div class="col-span-1 grid grid-rows-3 xs:mt-5 xs:grid-cols-0 xs:col-span-full xs:w-1/2 xs:mx-auto">
             <a href="https://qu.edu.sa/" target="_blank"> <img alt="Qassim University Logo" src="images/QU logo.svg">
             </a>
 
-            <div class="hidden small:grid grid-cols-3 gap-1 mx-auto mt-5">
+            <div class="hidden xs:grid grid-cols-3 gap-1 mx-auto mt-5">
                 <svg class="w-6 fill-white border border-white rounded-full p-[6px]" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
@@ -450,13 +444,13 @@
                 </svg>
             </div>
 
-            <div class="grid grid-row-3 small:mt-3 mt-5 small:mx-auto small:text-center small:tracking-wider">
+            <div class="grid grid-row-3 xs:mt-3 mt-5 xs:mx-auto xs:text-center xs:tracking-wider">
                 <div class="font-tajawal font-normal text-[10px] text-white">المملكة العربية السعودية</div>
                 <div class="font-tajawal font-normal text-[10px] text-white">القصيم - بريدة</div>
                 <div class="font-tajawal font-normal text-[10px] text-white">ص.ب: 960 - الرمز البريدي: 61421</div>
             </div>
 
-            <div class="small:hidden row-span-2 grid grid-cols-3 gap-1 mx-auto mt-5">
+            <div class="xs:hidden row-span-2 grid grid-cols-3 gap-1 mx-auto mt-5">
                 <a class="w-6 h-6 fill-white border border-white rounded-full p-[6px] hover:opacity-30 " href="#">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
@@ -477,16 +471,17 @@
         </div>
     </div>
     <hr class="my-5 border-gray-400">
-    <div class="grid grid-cols-3 mx-auto font-tajawal font-light text-[10px] text-white small:gap-2">
-        <div class="small:col-span-full small:mx-auto">جميع الحقوق محفوظة لجامعة القصيم 2022 ©</div>
-        <div class="small:col-span-full small:mx-auto text-center">
+    <div class="grid grid-cols-3 mx-auto font-tajawal font-light text-[10px] text-white xs:gap-2">
+        <div class="xs:col-span-full xs:mx-auto">جميع الحقوق محفوظة لجامعة القصيم 2022 ©</div>
+        <div class="xs:col-span-full xs:mx-auto text-center">
             <a class="hover:text-brand-header-1" href="#">سياسة الخصوصية</a> ●
             <a class="hover:text-brand-header-1" href="#">شروط الاستخدام</a>
         </div>
-        <div class="small:col-span-full small:mx-auto text-left">تطوير عمادة تقنية المعلومات</div>
+        <div class="xs:col-span-full xs:mx-auto text-left">تطوير عمادة تقنية المعلومات</div>
     </div>
 </footer>
-<div class="hidden fill-amber-500"></div>
+
+<div class="hidden fill-amber-500 activeFilter nonActiveFilter"></div>
 <script src="script.js"></script>
 </body>
 </html>

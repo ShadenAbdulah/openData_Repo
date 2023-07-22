@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-    .headerBtn {
-        @apply border w-7 h-7 rounded-full p-1 justify-center
-    }
-    .container {
-        width: 95%;
-        margin-right: auto;
-        margin-left: auto;
-    }
     .activeTab {
         pointer-events: none;
         @apply text-white bg-brand-header-1
@@ -18,5 +10,11 @@
     .activeTab div svg {
         pointer-events: none;
         @apply fill-white
+    }
+    .nonActiveFilter {
+        @apply stroke-1 stroke-brand-header-2
+    }
+    .activeFilter {
+        @apply stroke-2 stroke-brand-header-1
     }
 }

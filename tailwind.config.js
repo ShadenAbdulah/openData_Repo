@@ -15,15 +15,14 @@ module.exports = {
         '7': 'repeat(7, minmax(0, 1fr))'
       },
       screens: {
-        'xs': {'max': '374px'},
-        'small': {'max': '425px'},
-        'other': {'min': '426px'},
+        '2xs': {'min': '320', 'max': '374px'},
+        'xs': {'max': '425px'},
+        // 'other': {'min': '426px'},
       },
     },
-    container: {
-      center: true,
-    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 }
 

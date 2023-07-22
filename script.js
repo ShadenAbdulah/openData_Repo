@@ -2,20 +2,32 @@ function alertFun() {
     window.alert('Sorry, we still working on this page.')
 }
 
+let searchIcon = document.getElementById('searchIcon');
+searchIcon.addEventListener('click', function () {
+    let searchBar = document.getElementById('searchBar');
+    if (searchBar.classList.contains('hidden'))
+        searchBar.classList.replace('hidden', 'block');
+    else  searchBar.classList.replace('block', 'hidden');
+})
+
+let lang = document.getElementById('lang');
+lang.addEventListener('click', function () {
+    if (lang.innerText === "EN") lang.innerText = "ع";
+    else lang.innerText = "EN";
+})
+
 function shiftTaps(tapId, contentId) {
-    let toNonActive = document.getElementsByClassName('activeTab');
-    for (let i = 0; i < toNonActive.length; i++) {
-        toNonActive[i].classList.remove('activeTab');
-    }
-
-    let toHidden = document.getElementsByClassName('content');
-    for (let i = 0; i < toHidden.length; i++) {
-        toHidden[i].classList.replace('block', 'hidden');
-    }
-
     let toActive = document.getElementById(tapId);
     let content = document.getElementById(contentId);
+
+    let toNonActive = document.getElementsByClassName('activeTab');
+    for (let i = 0; i < toNonActive.length; i++)
+        toNonActive[i].classList.remove('activeTab');
     toActive.classList.toggle('activeTab');
+
+    let toHidden = document.getElementsByClassName('content');
+    for (let i = 0; i < toHidden.length; i++)
+        toHidden[i].classList.replace('block', 'hidden');
     content.classList.replace('hidden', 'block');
 }
 
@@ -32,17 +44,12 @@ function rating(rate, text) {
     }
 }
 
-let searchIcon = document.getElementById('searchIcon');
-searchIcon.addEventListener('click', function () {
-    let searchBar = document.getElementById('searchBar');
-    if (searchBar.classList.contains('hidden'))
-        searchBar.classList.replace('hidden', 'block');
-    else  searchBar.classList.replace('block', 'hidden');
-})
+function filter() {
+    let filter = document.getElementById('filter');
+    filter.classList.toggle('activeFilter');
 
-let lang = document.getElementById('lang');
-
-lang.addEventListener('click', function () {
-    if (lang.innerText === "EN") lang.innerText = "ع";
-    else lang.innerText = "EN";
-})
+    let filterFields = document.getElementById('filter-fields');
+    if (filterFields.classList.contains('hidden'))
+        filterFields.classList.replace('hidden', 'block');
+    else filterFields.classList.replace('block', 'hidden');
+}
