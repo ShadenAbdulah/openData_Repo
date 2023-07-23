@@ -17,4 +17,8 @@
     .activeFilter {
         @apply stroke-2 stroke-brand-header-1
     }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+    }
 }

@@ -532,6 +532,11 @@ video {
   stroke: #0369a1;
   stroke-width: 2;
 }
+select {
+        -moz-appearance: none;
+             appearance: none;
+        -webkit-appearance: none;
+    }
 .absolute {
   position: absolute;
 }
@@ -891,8 +896,17 @@ video {
 .stroke-brand-header-1 {
   stroke: #0369a1;
 }
+.stroke-black {
+  stroke: #000;
+}
+.stroke-gray-400 {
+  stroke: #9ca3af;
+}
 .stroke-1 {
   stroke-width: 1;
+}
+.stroke-2 {
+  stroke-width: 2;
 }
 .p-1 {
   padding: 0.25rem;
@@ -995,8 +1009,8 @@ video {
 .text-\[10px\] {
   font-size: 10px;
 }
-.text-\[5\%\] {
-  font-size: 5%;
+.text-\[90\%\] {
+  font-size: 90%;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1009,18 +1023,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-\[10\%\] {
-  font-size: 10%;
-}
-.text-\[30\%\] {
-  font-size: 30%;
-}
-.text-\[70\%\] {
-  font-size: 70%;
-}
-.text-\[90\%\] {
-  font-size: 90%;
 }
 .font-bold {
   font-weight: 700;
@@ -1040,10 +1042,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-brand-header-1 {
-  --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
 }
 .text-gray-200 {
   --tw-text-opacity: 1;
@@ -1096,10 +1094,6 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.hover\:fill-brand-header-1:hover {
-  fill: #0369a1;
-}
-
 .hover\:text-brand-header-1:hover {
   --tw-text-opacity: 1;
   color: rgb(3 105 161 / var(--tw-text-opacity));
@@ -1133,10 +1127,6 @@ video {
   stroke: #fff;
 }
 
-.group:hover .group-hover\:stroke-transparent {
-  stroke: transparent;
-}
-
 .group:hover .group-hover\:text-\[\#579CD8\] {
   --tw-text-opacity: 1;
   color: rgb(87 156 216 / var(--tw-text-opacity));
@@ -1150,10 +1140,6 @@ video {
 
   .\32xs\:top-16 {
     top: 4rem;
-  }
-
-  .\32xs\:m-5 {
-    margin: 1.25rem;
   }
 
   .\32xs\:-ml-10 {
@@ -1170,10 +1156,6 @@ video {
 
   .\32xs\:hidden {
     display: none;
-  }
-
-  .\32xs\:p-5 {
-    padding: 1.25rem;
   }
 
   .\32xs\:px-0 {
@@ -1208,10 +1190,6 @@ video {
 
   .xs\:col-span-full {
     grid-column: 1 / -1;
-  }
-
-  .xs\:m-5 {
-    margin: 1.25rem;
   }
 
   .xs\:mx-0 {
@@ -1278,10 +1256,6 @@ video {
 
   .xs\:border-b {
     border-bottom-width: 1px;
-  }
-
-  .xs\:p-5 {
-    padding: 1.25rem;
   }
 
   .xs\:px-0 {
