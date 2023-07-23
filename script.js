@@ -5,15 +5,19 @@ function alertFun() {
 let searchIcon = document.getElementById('searchIcon');
 searchIcon.addEventListener('click', function () {
     let searchBar = document.getElementById('searchBar');
-    if (searchBar.classList.contains('hidden'))
-        searchBar.classList.replace('hidden', 'block');
-    else  searchBar.classList.replace('block', 'hidden');
+    // if (searchBar.classList.contains('hidden'))
+    //     searchBar.classList.replace('hidden', 'block');
+    // else  searchBar.classList.replace('block', 'hidden');
+    searchBar.classList.toggle('hidden');
+    searchBar.classList.toggle('block');
 })
 
 let lang = document.getElementById('lang');
 lang.addEventListener('click', function () {
-    if (lang.innerText === "EN") lang.innerText = "ع";
-    else lang.innerText = "EN";
+    if (lang.innerText === "EN")
+        lang.innerText = "ع";
+    else
+        lang.innerText = "EN";
 })
 
 function shiftTaps(tapId, contentId) {
