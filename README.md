@@ -1,3 +1,3 @@
 # موقع البيانات المفتوحة | جامعة القصيم
 
-###### للإطلاع على الموقع: https://shadenabdulah.github.io/openData_Repo/
+###### للإطلاع على الموقع: https://shadenabdulah.github.io/static-openData-website/
